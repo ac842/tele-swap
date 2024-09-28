@@ -1,0 +1,156 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--border-radius);
+    padding: var(--2-step);
+    position: relative;
+}
+
+.container_label {
+    color: var(--hint-color);
+    font-size: 14px;
+}
+
+.info_div {
+    justify-content: space-between;
+    align-items: center;
+    color: var(--hint-color);
+    font-size: 14px;
+}
+
+.input_container {
+    display: flex;
+    margin-top: var(--step);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_field {
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 36px;
+    outline: none;
+    width: 69%;
+    flex: 1;
+}
+
+.input_field::placeholder {
+    color: var(--hint-color);
+}
+
+.input_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: text;
+    background: transparent;
+}
+
+.span_field {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 36px;
+    outline: none;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 30px;
+}
+
+.span_pulsing {
+    color: var(--hint-color);
+    animation: pulse 0.8s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.span_field:focus {
+    outline: none;
+}
+
+.span_field:empty::before {
+    content: '0';
+    color: var(--hint-color);
+}
+
+.input_wrapper {
+    position: relative;
+    display: flex;
+    cursor: text;
+    width: 69%; /* Any width required to make flex: 1 work*/
+    flex: 1;
+    overflow: hidden;
+}
+
+.output_wrapper {
+    cursor: default;
+}
+
+.input_info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--step);
+    color: var(--hint-color);
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.input_info_button {
+    color: var(--button-color);
+    background: var(--attention-bg);
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: var(--half-step);
+    padding: 2px var(--half-step);
+    border-radius: var(--step);
+
+}
+
+.input_info_balance {
+    display: flex;
+    align-items: center;
+}
+
+.loader_spinner {
+    border: 2px solid rgba(var(--attention-color), 0.3);
+    border-top: 2px solid var(--button-color);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.empty_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    margin: 0 var(--half-step);
+}
+
+.input_usd_balance {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

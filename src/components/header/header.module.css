@@ -1,0 +1,35 @@
+.connect_button {
+    background-color: var(--button-color);
+    font-size: 13px;
+    color: var(--button-text-color);
+    cursor: pointer;
+    border-radius: var(--4-step);
+    padding: var(--step) var(--2-step);
+}
+
+.left_div {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    display: flex;
+    align-items: center;
+    margin-right: var(--step);
+}
+
+.right_div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo_text path {
+    fill: var(--text-color);
+}
+
+.header_triangle_logo {
+    width: calc(4 * var(--step));
+}

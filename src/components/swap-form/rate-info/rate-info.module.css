@@ -1,0 +1,14 @@
+.rate_div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--2-step);
+    color: var(--hint-color);
+    font-size: 14px;
+    height: 20px;
+}
+
+.attention_text {
+    color: rgba(var(--danger-color));
+}

@@ -1,0 +1,107 @@
+.modalSheetContainer {
+    min-width: var(--app-min-width);
+    max-width: var(--app-max-width);
+}
+
+.modalSheet {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.modalButton {
+    background: none;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+
+.modalInputContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: var(--step) var(--2-step);
+}
+
+.modalInput {
+    background: var(--secondary-bg-color);
+    border-radius: 999999px;
+    padding: var(--step) var(--2-step) var(--step) var(--5-step);
+    color: var(--text-color);
+    font-size: 16px;
+    height: var(--4-step);
+}
+
+.modalInput::placeholder {
+    color: var(--hint-color);
+}
+
+.searchIcon {
+    position: absolute;
+    left: var(--2-step);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--hint-color);
+}
+
+.xcircleIcon {
+    position: absolute;
+    cursor: pointer;
+    right: var(--step);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--hint-color);
+    padding: var(--step);
+}
+
+.p {
+    margin: 0 var(--half-step);
+}
+
+.img {
+    width: var(--4-step);
+    height: var(--4-step);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.selected_asset_button {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: 18px;
+    background: var(--attention-bg);
+    border-radius: 999999px;
+    height: var(--4-step);
+    padding: var(--half-step);
+}
+
+.modalButtonConatiner button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-color);
+    border-radius: var(--2-step);
+    width: 100%;
+    color: var(--button-text-color);
+    font-size: 15px;
+    padding: var(--2-step) var(--3-step);
+}
+
+.assets_list {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.fixed_size_list{
+    scroll-behavior: smooth !important;
+}
+
+.footer_container {
+    margin-top: auto;
+    padding: var(--2-step);
+    background-color: var(--header-bg-color);
+    border-top: 1px solid var(--border-color);
+}

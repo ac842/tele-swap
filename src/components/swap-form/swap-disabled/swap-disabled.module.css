@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    align-items: center;
+    background: rgba(var(--danger-color), 0.1);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--2-step);
+    padding: var(--2-step);
+}
+
+.animation_container {
+    width: 100px;
+}
+
+.message {
+    flex: 1;
+    font-size: 15px;
+    color: var(--text-color);
+    margin-left: var(--2-step);
+}

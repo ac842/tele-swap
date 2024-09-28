@@ -1,0 +1,30 @@
+.body_div {
+    display: flex;
+    flex-direction: column;
+    margin: var(--2-step);
+}
+
+.input_asset_container {
+    position: relative;
+    margin-bottom: var(--half-step);
+}
+
+.output_asset_container {
+    position: relative;
+    margin-bottom: var(--2-step);
+}
+
+.swapform_header{
+    display: flex;
+    height: 29px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--2-step);
+    font-size: 22px;
+}
+
+.icons_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

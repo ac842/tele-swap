@@ -1,0 +1,20 @@
+.currency_selector_button {
+    display: flex;
+    height: 48px;
+    width: 48px;
+    background-color: var(--secondary-bg-color);
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    bottom: calc(-1 * var(--half-step));
+    transform: translate(-50%, 50%);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--2-step);
+    border: 2px solid var(--bg-color);
+    z-index: 1;
+}
+
+.icon{
+    color: var(--button-color);
+}
