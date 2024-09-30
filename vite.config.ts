@@ -18,7 +18,7 @@ export default defineConfig({
         Terminal()
     ],
     server: {
-        port: 8080, // 修改端口為 8080
+        port: 8787, // 修改端口為 8080
         host: '0.0.0.0' // 允許外部訪問
     }
 });
